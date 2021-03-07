@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10">
+  <g id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" transform="translate(-1126 -102)">
+    <g id="Inteligentny_obiekt_wektorowy-2" data-name="Inteligentny obiekt wektorowy" transform="translate(1126 99.889)">
+      <path id="Path_53" data-name="Path 53" d="M10.1,2.261a.55.55,0,0,0-.756,0,.487.487,0,0,0,0,.71l3.833,3.634H.529a.514.514,0,0,0-.529.5.519.519,0,0,0,.529.509H13.178L9.345,11.244a.5.5,0,0,0,0,.717.55.55,0,0,0,.756,0l4.741-4.495a.476.476,0,0,0,0-.71Z" fill="#1e201d"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1135.345,111.849a.5.5,0,0,1,0-.716l3.833-3.628h-12.649A.519.519,0,0,1,1126,107a.513.513,0,0,1,.529-.5h12.649l-3.833-3.634a.488.488,0,0,1,0-.71.552.552,0,0,1,.756,0l4.741,4.5a.477.477,0,0,1,0,.709l-4.741,4.495a.532.532,0,0,1-.375.151A.553.553,0,0,1,1135.345,111.849Z" fill="#fff"/>
+  </g>
+</svg>

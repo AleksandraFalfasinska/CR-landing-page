@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+/* Navbar */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #292935;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link:active {
+    position: relative;
+}
+
+.nav-link:active ::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #4044E6;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav .dropdown-menu {
+    top: 53px;
+    left: -209px;
+    background-color: #292935;
+    width: 300px;
+}
+
+.dropdown-menu li .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu li .dropdown-item:hover {
+    background-color: transparent;
+    color: #4044E6;
+}
+
+#search-input {
+    display: none;
+    width: 8rem;
+}
+
+
+/* Baner */
+
+.main__baner {
+    position: relative;
+}
+
+.main__baner-text {
+    position: absolute;
+    top: 28.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main__baner-text p {
+    font-size: 1.25rem;
+}
+
+
+/* Application  */
+
+.main__app-wrapper {
+    position: relative;
+    height: 360px;
+}
+
+.main__app {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 4px 10px 3px rgba(0, 0, 0, 0.19);
+    border-radius: 11px;
+}
+
+
+/* Revolution section  */
+
+.main__revolution-intro p,
+.main__revolution-content p {
+    font-weight: 300;
+    color: #A1A1A1;
+}
+
+.main__revolution-content strong {
+    color: #292935;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.main__revolution-more {
+    color: #4044E6;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* Video section */
+
+.main__video {
+    position: relative;
+}
+
+.main__video-content-box {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main__video-content-box-opinion {
+    font-size: 1.438rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.main__video-content-box-author {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.main__video-play p {
+    font-size: 1.276rem;
+    font-weight: 600;
+}
+
+.main__video-people {
+    position: absolute;
+    bottom: -18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__video-person-img,
+.main__video-person-img--man {
+    border: 3px solid #fff;
+    border-radius: 100%;
+    position: relative;
+}
+
+.main__video-person-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: .56;
+}
+
+.main__video-person .logo-small {
+    width: 88px;
+}
+
+
+/* Donec section  */
+
+.main__donec-content p {
+    font-weight: 300;
+    color: #A1A1A1;
+}
+
+.main__donec-content p span {
+    color: #4044E6;
+    font-weight: 600;
+}
+
+
+/* Work harder */
+
+.main__work-harder {
+    position: relative;
+}
+
+.main__work-harder-text {
+    position: absolute;
+    top: 161px;
+    left: 402px;
+    color: #fff;
+    width: 651px;
+}
