@@ -6,18 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CR</title>
-    <!-- CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="../lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../lib/css/owl.theme.default.min.css">
 
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex align-items-center py-2">
@@ -25,7 +34,9 @@
                     <img src="../src/assets/logo.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <img src="../src/assets/hamburger.svg" alt="Menu">
+                </span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -37,7 +48,23 @@
                                 Pages
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">About us</a></li>
+                                <li class="nav-item dropdown-submenu">
+                                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#" role="button">
+                                        About us
+                                    </a>
+                                    <div class="dropdown-menu__container">
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Case Study</a></li>
+                                            <li><a class="dropdown-item" href="#">Resources</a></li>
+                                            <li><a class="dropdown-item" href="#">Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Product</a></li>
+                                            <li><a class="dropdown-item" href="#">404</a></li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <li><a class="dropdown-item" href="#">Case Study</a></li>
                                 <li><a class="dropdown-item" href="#">Resources</a></li>
                                 <li><a class="dropdown-item" href="#">Services</a></li>
                                 <li><a class="dropdown-item" href="#">Product</a></li>
@@ -66,11 +93,17 @@
             </div>
         </nav>
     </header>
+    <!-- Header end -->
 
+    <!-- Main content -->
     <div class="main">
         <div class="main__baner">
             <div class="main__baner-img">
-                <img src="../src/assets/baner.svg" alt="Baner">
+                <picture>
+                    <source media="(min-width:576px)" srcset="../src/assets/baner.png">
+                    <source media="(min-width:300px)" srcset="../src/assets/baner-mobile.png">
+                    <img src="../src/assets/baner.png" alt="Baner">
+                </picture>
             </div>
             <div class="main__baner-text">
                 <h1 class="d-flex justify-content-center mb-3">Product</h1>
@@ -83,6 +116,7 @@
             </div>
         </div>
 
+        <!-- Revolution sction -->
         <div class="container main__revolution">
             <div class="row main__revolution-intro">
                 <div class="col-6 mx-auto text-center">
@@ -92,21 +126,21 @@
             </div>
 
             <div class="row main__revolution-content my-5 pt-4">
-                <div class="col-3 text-center">
+                <div class="col-12 col-xl-3 text-center">
                     <img src="../src/assets/clock.svg" alt="Clock" />
                     <p class="mt-3">
                         <strong>Nulla porta, lacus</strong> Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.
                     </p>
                 </div>
 
-                <div class="col-3 text-center mx-auto">
+                <div class="col-12 col-xl-3 text-center mx-auto">
                     <img src="../src/assets/umbrela.svg" alt="Umbrela" />
                     <p class="mt-3">
                         <strong>Nulla porta, lacus</strong> Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.
                     </p>
                 </div>
 
-                <div class="col-3 text-center">
+                <div class="col-12 col-xl-3 text-center">
                     <img src="../src/assets/umbrela.svg" alt="Umbrela" />
                     <p class="mt-3">
                         <strong>Nulla porta, lacus</strong> Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.
@@ -118,22 +152,25 @@
                 <a class="main__revolution-more" href="#"> See More Revolution</a>
             </div>
         </div>
+        <!-- Revolution sction end -->
 
+        <!-- Video section -->
         <div class="main__video mt-5 pt-5">
-            <div class="main__video-img pt-5">
+            <div class="main__video-img pt-sm-5">
                 <img src="../src/assets/testimonial_video.svg" alt="Video">
             </div>
             <div class="main__video-content-box text-center">
                 <div class="main__video-content-box-text">
-                    <p class="main__video-content-box-opinion px-4">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna tortor, imperdiet vel laoreet sit amet, tristique ut enim. Donec eleifend tortor id eros pulvinar convallis. Sed laoreet est eros, at facilisis nisi interdum a.”</p>
+                    <p class="main__video-content-box-opinion px-sm-4">“ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna tortor, imperdiet vel laoreet sit amet, tristique ut enim. Donec eleifend tortor id eros pulvinar convallis. Sed laoreet est eros, at facilisis nisi interdum a.”</p>
                     <p class="main__video-content-box-author mt-5"> John Doe, Project Manager</p>
                 </div>
-                <div class="main__video-play pt-5">
+                <button class="main__video-play pt-sm-5">
                     <img src="../src/assets/play.svg" alt="Video">
                     <p class="mt-3">Play movie</p>
-                </div>
+                </button>
             </div>
-            <div class="main__video-people d-flex align-items-center">
+
+            <div class="main__video-people d-none d-sm-flex align-items-center">
                 <div class="main__video-person me-4">
                     <div class="main__video-person-imgs d-flex flex-column align-items-center">
                         <div class="main__video-person-img">
@@ -142,6 +179,7 @@
                         <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Logo small">
                     </div>
                 </div>
+
                 <div class="main__video-person">
                     <div class="main__video-person-imgs d-flex flex-column align-items-center">
                         <div class="main__video-person-img">
@@ -150,6 +188,7 @@
                         <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Logo small">
                     </div>
                 </div>
+
                 <div class="main__video-person mx-4">
                     <div class="main__video-person-imgs d-flex flex-column align-items-center">
                         <div class="main__video-person-img--man">
@@ -158,6 +197,7 @@
                         <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Logo small">
                     </div>
                 </div>
+
                 <div class="main__video-person">
                     <div class="main__video-person-imgs d-flex flex-column align-items-center">
                         <div class="main__video-person-img">
@@ -166,17 +206,21 @@
                         <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Logo small">
                     </div>
                 </div>
+
                 <div class="main__video-person ms-4">
                     <div class="main__video-person-imgs d-flex flex-column align-items-center">
                         <div class="main__video-person-img">
                             <img src="../src/assets/man3.svg" alt="Man">
                         </div>
-                        <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Logo small">
+                        <img class="logo-small mt-4" src="../src/assets/logo_small.svg" alt="Company Business Tagline">
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <!-- Video section end -->
+
+        <!-- Donec section -->
         <div class="container main__donec mt-5 pt-5">
             <div class="row pt-5">
                 <div class="col-7 main__donec-content mx-auto text-center pt-3">
@@ -187,20 +231,139 @@
                 </div>
             </div>
         </div>
+        <!-- Donec section end -->
 
+        <!-- Work harder -->
         <div class="main__work-harder">
             <div class="main__work-harder-img">
-                <img src="../src/assets/work_harder.svg" alt="Work harder">
+                <picture>
+                    <source media="(min-width:576px)" srcset="../src/assets/work_hard.png">
+                    <source media="(min-width:300px)" srcset="../src/assets/work_hard-mobile.png">
+                    <img src="../src/assets/work_hard.png" alt="Work harder">
+                </picture>
+
             </div>
-            <div class="main__work-harder-text">
+            <div class="main__work-harder-text px-5 px-md-0">
                 <h2 class="d-flex justify-content-center mb-3">Aenean bibendum lacus sed ex commodo, pretium rutrum turpis elementum.</h2>
             </div>
-            <button class="d-flex align-items-center justify-content-center" type="submit">
-                <a href="#">Check it</a>
+            <button class="work-harder__btn d-flex align-items-center justify-content-center" type="submit">
+                <a class="" href="#">Check it</a>
             </button>
         </div>
+        <!-- Work harder end -->
+
+
+        <!-- Owl carousel -->
+        <div class="container my-4">
+            <div class="owl-carousel py-5">
+                <div class="owl-carousel__img">
+                    <img src="../src/assets/logo_big.svg" alt="Company Business Tagline">
+                </div>
+                <div class="owl-carousel__img">
+                    <img src="../src/assets/logo_big.svg" alt="Company Business Tagline">
+                </div>
+                <div class="owl-carousel__img">
+                    <img src="../src/assets/logo_big.svg" alt="Company Business Tagline">
+                </div>
+                <div class="owl-carousel__img">
+                    <img src="../src/assets/logo_big.svg" alt="Company Business Tagline">
+                </div>
+                <div class="owl-carousel__img">
+                    <img src="../src/assets/logo_big.svg" alt="Company Business Tagline">
+                </div>
+            </div>
+        </div>
+        <!-- Owl carousel end -->
 
     </div>
+    <!-- Main content end -->
+
+    <!-- Footer -->
+    <footer class="footer pb-5">
+        <div class="container pt-3">
+            <div class="row py-5">
+
+                <div class="col-12 col-md-4">
+                    <div class="footer__logo pt-2">
+                        <img src="../src/assets/logo_white.png" alt="Logo">
+                    </div>
+                    <div class="footer__company-descr mt-4">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna tortor, imperdiet vel laoreet sit amet, tristique ut enim. Donec eleifend tortor id eros pulvinar convallis. Sed laoreet est eros, at facilisis nisi interdum a.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-2 ms-md-auto">
+                    <h2 class="footer__headline">Fast Links</h2>
+                    <ul class="footer__fast-links mt-4 ps-0">
+                        <li class="footer__fast-link">
+                            <a href="">About Us</a>
+                        </li>
+                        <li class="footer__fast-link">
+                            <a href="#">Case Study</a>
+                        </li>
+                        <li class="footer__fast-link">
+                            <a href="">Services</a>
+                        </li>
+                        <li class="footer__fast-link">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer__fast-link">
+                            <a href="">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h2 class="footer__headline">Contact Us</h2>
+                    <div class="footer__contact mt-4">
+                        <div class="footer__contact-data">
+                            <span>Phone: 
+                                <a href="tel:+48123456789">+48 123 456 789</a>
+                            </span>
+                        </div>
+                        <div class="footer__contact-data">
+                            <span>Email:
+                                <a href="mailto:hello@clickray.eu">hello@clickray.eu</a>
+                            </span>
+                        </div>
+                        <div class="footer__contact-data">
+                            <span>Adress: Łazarza 19, Kraków, Poland</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container d-flex justify-content-between align-items-center py-4">
+                <div class="d-flex align-items-center">
+                    <span class="me-1">&#169</span>
+                    <span> Copyrights 2016 All Rights Reserved by Clickray.</span>
+                </div>
+                <ul class="footer__bottom-media d-none d-sm-flex align-items-center mb-0">
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-pinterest-p"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram me-4 pe-2"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer end -->
+
 
 
     <!-- jQuery  -->
@@ -208,6 +371,9 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Owl carousel -->
+    <script src="../lib/owl.carousel.min.js"></script>
 
     <!-- Custom JS  -->
     <script src="../src/js/main.js"></script>
